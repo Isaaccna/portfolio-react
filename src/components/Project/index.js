@@ -44,14 +44,14 @@ function Portfolio(props) {
 
    
     return (
-            <section id="portfolio">
+            <section id="project">
                 
-               
+               <h2> Projects </h2>
                         
             {projects.map((project, index) =>(
 
                 <div key={index}>
-                    <h3>{project.name}</h3>
+                    <h4>{project.name}</h4>
                     <img 
                     src={require(`../../assets/projectImage/${index}.png`)}
                     alt={project.description}
