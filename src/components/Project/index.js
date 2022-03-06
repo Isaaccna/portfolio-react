@@ -53,8 +53,9 @@ function Portfolio(props) {
                 <div key={index}>
                     <h3>{project.name}</h3>
                     <img 
-                    src={(`{../../assets/}${project.name}`)}
+                    src={require(`../../assets/projectImage/${index}.png`)}
                     alt={project.description}
+                    width="50%"
                     />
                 </div>
             ))}
