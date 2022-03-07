@@ -1,4 +1,6 @@
 import React from 'react';
+import { AiFillGithub } from 'react-icons/ai'
+import { DiHeroku } from 'react-icons/di'
 
 function Modal({onClose, currentProject}) {
     const {name,githubLink, deployedApplication, description, index } = currentProject
@@ -11,8 +13,8 @@ function Modal({onClose, currentProject}) {
           alt="current project" width="80%"/>
           <div>
               <ul>
-              <li><a href={githubLink} >Github link</a></li>
-              <li><a href={deployedApplication} >Deployed Application </a></li>
+              <li><a href={githubLink} target="_blank"><AiFillGithub /></a></li>
+              <li><a href={deployedApplication} target="_blank" ><DiHeroku/> </a></li>
               </ul>
           </div>
           <p>
