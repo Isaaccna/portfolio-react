@@ -49,6 +49,7 @@ header nav ul li a{
   font-size:3vw;
   text-decoration: none;
   margin:0 auto;
+  font-weight: bold;
 }
 header nav ul li a:hover {
   background-color: rgb(255, 255,255);

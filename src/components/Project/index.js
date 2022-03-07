@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import Modal from '../Modal';
 
 function Portfolio(props) {
-    
+    const [currentProject, setCurrentProject] = useState();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+
     const [projects] = useState([
         {
             name: 'Budget-Tracker',
@@ -42,9 +46,15 @@ function Portfolio(props) {
         }
     ])
 
+    const toggleModal = (project, index) => {
+           setCurrentProject({ ...project, index: index})
+           setIsModalOpen(!isModalOpen);
+    }
    
     return (
             <section id="project">
+{isModalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
+
                 
                <h1> Projects </h1>
                <div id="wrap-project">
@@ -56,6 +66,9 @@ function Portfolio(props) {
                     <img 
                     src={require(`../../assets/projectImage/${index}.png`)}
                     alt={project.description}
+                    className="img-thumbnail"
+                    onClick={() => toggleModal(project,index)}
+                    key={project.name}
                     />
                 </div>
             

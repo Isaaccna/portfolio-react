@@ -7,7 +7,7 @@ function Resume() {
             <h1>Resume</h1>
             
 
-          <div id ="wrapper">
+          <div id ="wrapper" className="my-3">
               <div>
             <h3> Front-end Proficiencies</h3>
             <ul>
