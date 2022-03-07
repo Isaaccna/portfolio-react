@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
+
 :root {
   --primary-color: #fce138;
   --secondary-color: #0b8ee6;
@@ -84,6 +85,7 @@ section h1 {
 }
 #each-project img {
   width: 300px;
+  border: var(--tertiary-color) solid 2px;
 }
 
 #contact form {
@@ -166,6 +168,12 @@ footer {
   #profile-picture img {
     width: 250px;
     
+  }
 
+  #contact form {
+    width: 50%;
+  }
+  #contact button {
+    width: 25%;
   }
 }

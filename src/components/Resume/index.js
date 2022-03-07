@@ -5,8 +5,10 @@ function Resume() {
     return (
         <section id="resume">
             <h1>Resume</h1>
-            <a href="/images/myw3schoolsimage.jpg" download> Click here to download my resume</a>
+            
 
+          <div id ="wrapper">
+              <div>
             <h3> Front-end Proficiencies</h3>
             <ul>
                 <li>HTML</li>
@@ -17,7 +19,8 @@ function Resume() {
                 <li>React</li>
                 <li>Bootstrap</li>
             </ul>
-
+           </div>
+           <div>
             <h3> Back-end Proficiencies</h3>
             <ul>
                 <li>APIs</li>
@@ -28,6 +31,12 @@ function Resume() {
                 <li>REST</li>
                 <li>GraphQL</li>
             </ul>
+            </div>
+            </div>
+
+          <span>
+            <a href="/images/myw3schoolsimage.jpg" download> Click here to download my resume</a>
+            </span>
         </section>
     )
 }
