@@ -46,19 +46,21 @@ function Portfolio(props) {
     return (
             <section id="project">
                 
-               <h2> Projects </h2>
-                        
+               <h1> Projects </h1>
+               <div id="wrap-project">
+
             {projects.map((project, index) =>(
 
-                <div key={index}>
-                    <h4>{project.name}</h4>
+
+                <div className="m-4"  id="each-project"key={index}>
                     <img 
                     src={require(`../../assets/projectImage/${index}.png`)}
                     alt={project.description}
-                    width="50%"
                     />
                 </div>
+            
             ))}
+            </div>
                   
                  </section>
 

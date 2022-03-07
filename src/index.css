@@ -11,3 +11,161 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #0b8ee6;
+  --tertiary-color: #b23984;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin:auto;
+  background-color: var(--tertiary-color);
+   
+}
+header h1 a {
+  list-style: none;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  align-items: center;
+  list-style: none;
+  margin: 20px auto;
+}
+header nav ul li a{
+
+  padding: 10px 15px;
+  font-size:3vw;
+  text-decoration: none;
+  margin:0 auto;
+}
+header nav ul li a:hover {
+  background-color: rgb(255, 255,255);
+  border-radius: 15px;
+  font-size: 3.0vw
+}
+section h1 {
+  text-align: center;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin:auto;
+}
+#profile-picture img {
+  width: 300px;
+  border-radius: 100px;
+}
+
+
+#wrap-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#each-project {
+
+}
+#each-project img {
+  width: 300px;
+}
+
+#contact form {
+  width:75%;
+  text-align: left;
+  margin:50px auto 75px auto;
+  border: rgba(199, 67, 148, 0.801) 3px solid;
+  padding: 15px;
+}
+#contact input{
+  border:rgba(199, 67, 148, 0.801) solid 1px;
+  display:block;
+  padding: 7px 15px;
+  font-size: 16px;
+  width:100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius:10px;
+  opacity: 0.85;
+
+}
+#contact textarea{
+  border:rgba(199, 67, 148, 0.801) solid 1px;
+  display:block;
+  padding: 7px 15px;
+  font-size: 16px;
+  width:100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border-radius:10px;
+  opacity: 0.85;
+}
+form button {
+  width:100%;
+  padding: 7px 15px;
+  border-radius: 10px;
+  background-color: rgba(199, 67, 148, 0.801);
+  margin-bottom: 15px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+
+
+
+footer {
+  background-color: var(--tertiary-color);
+}
+
+
+
+@media screen and (min-width: 700px) {
+    
+  header nav ul li{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      
+  }
+  header nav ul li a {
+      font-size: 2.5vw;
+      margin: 0 40px 0 40px;
+      
+  }
+  #wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:auto;
+  }
+  #profile-picture {
+    flex: 0;
+  }
+  #description {
+    flex:2;
+    font-size: 2.0vw;
+  }
+  #profile-picture img {
+    width: 250px;
+    
+
+  }
+}

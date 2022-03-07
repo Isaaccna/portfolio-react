@@ -5,11 +5,11 @@ function Header() {
 
   return (
     <header>
-        <h2> 
+        <h1> 
         <a
          href="/">Isaac Andrade
         </a>
-         </h2>
+         </h1>
        <Nav />
     </header>
   );

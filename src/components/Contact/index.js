@@ -60,7 +60,6 @@ function ContactForm() {
   </div>
 )}
 
-
        <button type="submit">Submit</button>
                  </form>
         </section>

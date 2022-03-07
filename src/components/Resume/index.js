@@ -4,7 +4,7 @@ function Resume() {
 
     return (
         <section id="resume">
-            <h2>Resume</h2>
+            <h1>Resume</h1>
             <a href="/images/myw3schoolsimage.jpg" download> Click here to download my resume</a>
 
             <h3> Front-end Proficiencies</h3>
