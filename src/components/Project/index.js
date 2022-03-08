@@ -60,9 +60,10 @@ function Portfolio(props) {
                <div id="wrap-project">
 
             {projects.map((project, index) =>(
-
+                
 
                 <div className="m-4"  id="each-project"key={index}>
+                    <h4 className="text-center"> {project.name}</h4>
                     <img 
                     src={require(`../../assets/projectImage/${index}.png`)}
                     alt={project.description}

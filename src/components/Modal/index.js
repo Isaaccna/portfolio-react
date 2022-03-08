@@ -10,14 +10,14 @@ function Modal({onClose, currentProject}) {
         <div className="modalContainer">
           <h3 className="modalTitle">{name}</h3>
           <img src ={require(`../../assets/projectImage/${index}.png`)} 
-          alt="current project" width="80%"/>
-          <div>
+          alt="current project" width="100%"/>
+          <div className="media">
               <ul>
               <li><a href={githubLink} target="_blank"><AiFillGithub /></a></li>
               <li><a href={deployedApplication} target="_blank" ><DiHeroku/> </a></li>
               </ul>
           </div>
-          <p>
+          <p className="modalDescription">
             {description}
           </p>
           <button onClick={onClose} type="button">

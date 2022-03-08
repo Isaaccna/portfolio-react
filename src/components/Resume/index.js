@@ -7,9 +7,9 @@ function Resume() {
             <h1>Resume</h1>
             
 
-          <div id ="wrapper" className="my-3">
-              <div>
-            <h3> Front-end Proficiencies</h3>
+          <div id ="wrapper" className="my-4">
+              <div className="proficiencies p-3">
+            <h3 > Front-end Proficiencies</h3>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -20,8 +20,8 @@ function Resume() {
                 <li>Bootstrap</li>
             </ul>
            </div>
-           <div>
-            <h3> Back-end Proficiencies</h3>
+           <div className="proficiencies  p-3">
+            <h3 > Back-end Proficiencies</h3>
             <ul>
                 <li>APIs</li>
                 <li>Node</li>
@@ -34,7 +34,7 @@ function Resume() {
             </div>
             </div>
 
-          <span>
+          <span className="m-3">
             <a href="/images/myw3schoolsimage.jpg" download> Click here to download my resume</a>
             </span>
         </section>
