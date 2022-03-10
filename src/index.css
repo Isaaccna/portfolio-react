@@ -60,6 +60,7 @@ section h1 {
 }
 .proficiencies {
   background-color: white;
+  
 }
 #profile-picture img {
   width: 300px;
@@ -241,5 +242,9 @@ footer ul {
   }
   #contact button {
     width: 25%;
+  }
+  .proficiencies {
+    flex:1;
+    border : solid 1px var(--tertiary-color);
   }
 }

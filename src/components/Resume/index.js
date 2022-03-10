@@ -35,7 +35,7 @@ function Resume() {
             </div>
 
           <span className="m-3">
-            <a href="/images/myw3schoolsimage.jpg" download> Click here to download my resume</a>
+            <a href="https://drive.google.com/file/d/1E1gukt4H6eFCji97gCnpZMpA8CHZyP_7/view?usp=sharing" target="_blank"  download> Click here to download my resume</a>
             </span>
         </section>
     )
